@@ -6,11 +6,64 @@
   <title>Welcome - Panevėžys Guide</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/script.js" defer></script>
+  <style>
+    /* Additional homepage styles */
+    .hero {
+      background-image: url('assets/images/hero.jpg'); /* Replace with real city image */
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .card {
+      background: #f8f8f8;
+      padding: 1.5rem;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #8B0000;
+      font-weight: bold;
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 2rem auto;
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav class="navbar">
-      <a href="../index.html" class="nav-brand">Panevėžys Guide</a>
+      <a href="index.html" class="nav-brand">Panevėžys Guide</a>
       <ul class="nav-links">
         <li><a href="pages/attractions.html">Attractions</a></li>
         <li><a href="pages/day-trips.html">Day Trips</a></li>
@@ -20,10 +73,40 @@
       </ul>
     </nav>
   </header>
+
+  <section class="hero">
+    Discover Panevėžys<br>
+    The Heart of Aukštaitija, Lithuania
+  </section>
+
   <main>
-    <h1>Welcome</h1>
-    <p>This is the homepage of the Panevėžys tourist guide. Use the navigation above to explore.</p>
+    <div class="intro">
+      <p>
+        Welcome to the Panevėžys Tourist Guide! Nestled in the heart of Lithuania, Panevėžys is a vibrant city blending culture, history, and nature. 
+        Whether you're here for a day or a weekend, discover the city's theaters, museums, parks, and nearby scenic destinations. 
+        Plan your visit with suggested routes and practical travel tips to make the most of your trip.
+      </p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Top Attractions</h3>
+        <p>Discover the city's landmarks, museums, and cultural sites.</p>
+        <a href="pages/attractions.html">Explore</a>
+      </div>
+      <div class="card">
+        <h3>Day Trips</h3>
+        <p>Explore beautiful surroundings and nearby destinations.</p>
+        <a href="pages/day-trips.html">Explore</a>
+      </div>
+      <div class="card">
+        <h3>Routes</h3>
+        <p>Follow suggested itineraries to make the most of your visit.</p>
+        <a href="pages/routes.html">Explore</a>
+      </div>
+    </div>
   </main>
+
   <footer>
     <p>&copy; 2025 Panevėžys Guide</p>
   </footer>
